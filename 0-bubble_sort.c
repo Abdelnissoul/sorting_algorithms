@@ -10,7 +10,7 @@ void bubble_sort(int *array, size_t size)
 	size_t first_elem;
 	size_t sec_elem;
 
-	if (array == NULL || size == NULL)
+	if (array == NULL || !size)
 		return;
 
 	first_elem = 0;
