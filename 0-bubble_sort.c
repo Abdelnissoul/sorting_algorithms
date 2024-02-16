@@ -20,7 +20,7 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[sec_elem] > array[sec_elem + 1])
 			{
-				count = array [sec_elem];
+				count = array[sec_elem];
 				array[sec_elem] = array[sec_elem + 1];
 				array[sec_elem + 1] = count;
 				print_array(array, size);
