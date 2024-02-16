@@ -10,8 +10,10 @@ void insertion_sort_list(listint_t **list)
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
-	listint_t *count = (*list)->next;
+	listint_t *count;
 	listint_t *ptr, *next;
+
+	count = (*list)->next;
 
 	while (count)
 	{
