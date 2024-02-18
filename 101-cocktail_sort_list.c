@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * swap_elems - Swap a node in a doubly-linked list 
+ * swap_elems - Swap a node in a doubly-linked list
  * @list: A pointer to the head of a doubly-linked list of integers.
  * @tail: A pointer to the tail of the doubly-linked list.
  * @shaker: A pointer to the current swapping node of the cocktail shaker algo.
