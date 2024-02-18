@@ -20,7 +20,7 @@ int max_value(int *array, int size)
 }
 
 /**
- * counting_sort - the main function that Sorts an array using counting sort algorithm.
+ * counting_sort - function that Sorts array using counting sort algorithm.
  * @array: represent the array
  * @size: represent the size of the array
  * Description: printing the array
