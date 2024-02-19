@@ -46,7 +46,6 @@ void heap_sift_sort(int *array, size_t size, size_t base, size_t root)
  * heap_sort - Sort an array of integers using the heap sort algorithm.
  * @array: An array of integers.
  * @size: The size of the array.
- * 
  * Description: Prints the array after each swap.
  */
 void heap_sort(int *array, size_t size)
