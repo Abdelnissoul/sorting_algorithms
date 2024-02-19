@@ -9,7 +9,7 @@
  * @end: The end index.
  */
 void merge_subarray(int *subarray, int *ptr, size_t start, size_t middle,
-                    size_t end)
+			size_t end)
 {
 	size_t el1, el2, ptr_index = 0;
 	size_t i, j;
@@ -19,7 +19,6 @@ void merge_subarray(int *subarray, int *ptr, size_t start, size_t middle,
 
 	printf("Merging...\n[left]: ");
 	print_array(subarray + start, middle - start);
-
 	printf("[right]: ");
 	print_array(subarray + middle, end - middle);
 
@@ -29,7 +28,7 @@ void merge_subarray(int *subarray, int *ptr, size_t start, size_t middle,
 		{
 			ptr[ptr_index++] = subarray[el1++];
 		}
-		 else 
+		else
 		{
 			ptr[ptr_index++] = subarray[el2++];
 		}
@@ -66,6 +65,7 @@ void merge_recurs(int *subarray, int *ptr, size_t start, size_t end)
 	if (end - start > 1)
 	{
 		size_t middle = start + (end - start) / 2;
+		
 		merge_recurs(subarray, ptr, start, middle);
 		merge_recurs(subarray, ptr, middle, end);
 		merge_subarray(subarray, ptr, start, middle, end);
