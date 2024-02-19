@@ -19,6 +19,9 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+#define UP 0
+#define DOWN 1
+
 /**
  * enum bool - Enumeration of Boolean values.
  * @false: Equals 0.
