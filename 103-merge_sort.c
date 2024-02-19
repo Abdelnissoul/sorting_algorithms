@@ -65,7 +65,7 @@ void merge_recurs(int *subarray, int *ptr, size_t start, size_t end)
 	if (end - start > 1)
 	{
 		size_t middle = start + (end - start) / 2;
-		
+
 		merge_recurs(subarray, ptr, start, middle);
 		merge_recurs(subarray, ptr, middle, end);
 		merge_subarray(subarray, ptr, start, middle, end);
