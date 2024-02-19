@@ -48,7 +48,8 @@ void merging_elems(int *array, size_t size, size_t begin, size_t seq,
  * @seq: The size of a block created
  * @here: The direction to sort.
  */
-void ints_into_seq(int *array, size_t size, size_t begin, size_t seq, char here)
+void ints_into_seq(int *array, size_t size, size_t begin, size_t seq,
+		char here)
 {
 	size_t cut;
 	char *str = (here == UP) ? "UP" : "DOWN";
